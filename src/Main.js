@@ -9,12 +9,12 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { DrawerNavigator, StackNavigator } from 'react-navigation';
-
+import Register from "../src/screens/Register"
 export default class Main extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>Main screen Welcome to React Native!</Text>
+                <Register/>
             </View>
         );
     }
@@ -23,8 +23,6 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
     welcome: {
